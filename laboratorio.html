@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Guia de Laboratorio 05</title>
+</head>
+<body>
+
+<!--Registro del Equipo-->
+
+    <div class="container">
+        <div class="row justify-content-center align-items-center g-2 mb-5">
+            <div class="col-12 col-md-6 col-lg-4">
+                <h2 class="my-5">Registrar Equipo </h2>
+                <!-- Input Nombre del Equipo -->
+                <div class="mb-3">
+                    <label class="form-label" for="txtEquipo">Ingrese el Nombre del Equipo <span
+                            class="text-danger">*</span></label>
+                    <input id="txtEquipo" name="txtEquipo" class="form-control" type="text" required>
+                </div>
+                <!-- Input Nombre del Estado -->
+                <div class="mb-3">
+                    <label class="form-label" for="txtEstadio">Ingrese el Nombre de su Estadio <span
+                            class="text-danger">*</span></label>
+                    <input id="txtEstadio" name="txtEstadio" class="form-control" type="text" required>
+                </div>
+
+                <!-- Input Sede del Estadio -->
+                <div class="mb-5">
+                    <label class="form-label" for="txtSede">Seleccione la Ciudad de su Estadio <span
+                            class="text-danger">*</span></label>
+                    <select class="form-select" name="txtSede" id="txtSede">
+                        <option value="Lima">Lima</option>
+                        <option value="Lambayeque">Lambayeque</option>
+                        <option value="Trujillo">La Libertad</option>
+                        <option value="Arequipa">Arequipa</option>
+                        <option value="Piura">Piura</option>
+                        <option value="Tumbes">Tumbes</option>
+                        <option value="Ica">Ica</option>
+                        <option value="Cusco">Cusco</option>
+                        <option value="Ancash">Ancash</option>
+                        <option value="Pasco">Pasco</option>
+                        <option value="Loreto">Loreto</option>
+                        <option value="Tacna">Tacna</option>
+                    </select>
+                </div>
+
+                <!-- Input Nombre del DT -->
+                <div class="mb-3">
+                    <label class="form-label" for="txtEntrenador">Ingrese el Nombre del Entrenador <span
+                            class="text-danger">*</span></label>
+                    <input id="txtEntrenador" name="txtEntrenador" class="form-control" type="text" required>
+                </div>
+
+                <!-- Input Nombre del Presidente del Club -->
+                <div class="mb-3">
+                    <label class="form-label" for="txtPresidente">Ingrese el Nombre del Presidente del Club <span
+                            class="text-danger">*</span></label>
+                    <input id="txtPresidente" name="txtPresidente" class="form-control" type="text" required>
+                </div>
+
+                <!-- Input Correo de Contacto -->
+                <div class="mb-3">
+                    <label class="form-label" for="txtCorreo">Ingrese un Correo de Contacto  <span
+                            class="text-danger">*</span></label>
+                    <input id="txtCorreo" name="txtCorreo" class="form-control" type="email" required>
+                </div>
+                
+                <!-- Input Torneo -->
+                <div class="mb-5">
+                    <label class="form-label" for="txtTorneo">Seleccione un Torneo al que quiera participar <span
+                            class="text-danger">*</span></label>
+                    <select class="form-select" name="txtTorneo" id="txtTorneo">
+                        <option value="Champions League" selected>Champions League</option>
+                        <option value="Europa League">Europa League</option>
+                        <option value="Copa Libertadores">Copa Libertadores</option>
+                        <option value="Copa Sudamericana">Copa Sudamericana</option>
+                        <option value="Torneo de la Amistad">Torneo de la Amistad</option>
+                    </select>
+                </div>
+                <button id="btnEnviar" class="btn btn-primary">Enviar</button>
+            </div>
+        </div>
+
+ <!--Tabla de Costos para la Inscripción-->
+        <div class="row justify-content-center align-items-center g-2">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="table">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Torneo</th>
+                                <th scope="col">Costo de Inscripción</th>
+                                <th scope="col">Premio para el Campeón</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td scope="row">Champions League </td>
+                                <td>100</td>
+                                <td>1 000 000</td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Europa League</td>
+                                <td>70</td>
+                                <td>700 000</td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Copa Liberadores</td>
+                                <td>90</td>
+                                <td>900 000</td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Copa Sudamericana</td>
+                                <td>60</td>
+                                <td>600 000</td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Torneo de la Amistad </td>
+                                <td>120</td>
+                                <td>2 000 000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+        
+<p id="Premio"></p>
+
+ 
+    <!--JQUERY-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <!--JAVASCRIPT-->
+    <script src="laboratorio.js"></script>
+
+</body>
+</html>
